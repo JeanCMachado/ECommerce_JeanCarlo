@@ -14,7 +14,7 @@ function init() {
                   <img src="${product.image}"  alt="..." class="img-thumbnail" style="max-width:100px;">
                 </div>  
               <div class="col-2">
-                  <p>${product.title}</p>
+                  <h5>${product.title}</h5>
                 </div>
                 
                 <div class="col-2">
@@ -29,3 +29,4 @@ function init() {
       .catch(error => console.log(error));
   
   }
+  sessionStorage.setItem('db_produtos', JSON.stringify(data));

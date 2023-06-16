@@ -15,7 +15,7 @@
 
 
 
-<body onload="init()">
+<body onload="pesquisar_produto()">
     <header class="bg-danger border border-5 rounded">
         <div class="row">
             <div class="col-1">
@@ -31,6 +31,25 @@
         </div>
     </header>
 
+
+    <div class="container">
+        <div>
+          <h2>Informe a palavra desejada</h2>
+        </div>
+    
+        <div class="input-group">
+          <input id="palavra" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" />
+          <button type="button" class="btn btn-outline-primary" onclick="pesquisar_produto()">search</button>
+        </div>
+      </div>
+    
+      <div class="container py-5" id="tela_pesquisa">
+        Os prodtutos devem aparecer aqui
+      </div>
+    
+      <script src="pesquisa.js"></script>
+      
 
     <footer class="bg-danger border border-5 rounded float-none">
         <div class="container">
