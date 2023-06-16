@@ -25,7 +25,7 @@ function detalhes_produto() {
                 <p>${product.description}</p>
               </div>
               <div class="col-3">
-                <img src="${product.image}"  alt="..." class="img-thumbnail" style="max-width:100px;">
+                <img src="${product.image}"  alt="..." class="img-thumbnail" style="max-width:400px;">
               </div>  
               <div>
                 <h2>R$: ${product.price}</h2>              
