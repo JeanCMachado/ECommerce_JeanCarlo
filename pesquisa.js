@@ -7,13 +7,13 @@ function pesquisar_produto() {
       .then(res => res.json())
       .then(data => {
         let str = ''
-       
+       //Pesquisa
         for (let i = 0; i < data.length; i++) {
           let product = data[i]
           let text = product.title
           let position = text.search(palavra);
-          if (position > 0) {
-            str += `<div class="row">          
+          if (position > -1) {
+            str += `<div class="row">           
                <div class="col-3">
                 <img src="${product.image}"  alt="..." class="img-thumbnail" style="max-width:100px;">
                </div>

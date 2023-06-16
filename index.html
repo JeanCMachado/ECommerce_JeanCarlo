@@ -19,17 +19,20 @@
     <header class="bg-danger border border-5 rounded"> <!-- Cabeçalho-->
         <div class="row">
             <div class="col-1">
-                <a href="index.html" class="list-inline-item text-reset text-decoration-none fs-4 p-3"><img src="imagens/Logo.png" class="d-block w-100" alt="..."></a>
+                <a href="index.html" class="list-inline-item text-reset text-decoration-none fs-4 p-3"><img
+                        src="imagens/Logo.png" class="d-block w-100" alt="..."></a>
             </div>
-            <div class="col-1 align-self-center">
+            <div class="col-1 align-self-center align-en">
                 <h1>Punch</h1>
             </div>
             <div class="col">
                 <nav class="text-end">
                     <ul class="list-inline">
                         <li>
-                            <a href="index.html" class="list-inline-item text-reset text-decoration-none fs-4 p-3 ">Página Inicial</a>
-                            <a href="pesquisa.html" class="list-inline-item text-reset text-decoration-none fs-4 p-3">Pesquisar</a>
+                            <a href="index.html"
+                                class="list-inline-item text-reset text-decoration-none fs-4 p-3 ">Página Inicial</a>
+                            <a href="pesquisa.html"
+                                class="list-inline-item text-reset text-decoration-none fs-4 p-3">Pesquisar</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,76 +42,70 @@
 
     <div class="container text-center"> <!-- Lateral-->
         <div class="row">
-          <div class="col-sm-4 m-3 bg-danger rounded border-5">
-            <h2>Encontre Rápido - Escolha seu produto</h2>
-            <div class="form-floating">
-              <select class="form-select m-1" id="floatingSelect" aria-label="Floating label select example">
-                <option selected>Categorias</option>
-                <option value="1">Joias</option>
-                <option value="2">Eletronicos</option>
-                <option value="3">Roupas Femininas</option>
-                <option value="4">Roupas Masculinas</option>
-              </select>
-              <label for="floatingSelect">Escolha</label>
+            <div class="col-sm-4 m-3 bg-danger rounded border-5 p-2">
+                <h2>Encontre Rápido - Escolha seu produto</h2>
+                <div class="form-floating p-1">
+                    <select class="form-select m-1" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Categorias</option>
+                        <option value="1">Joias</option>
+                        <option value="2">Eletronicos</option>
+                        <option value="3">Roupas Femininas</option>
+                        <option value="4">Roupas Masculinas</option>
+                    </select>
+                    <label for="floatingSelect">Escolha</label>
+                </div>
+                <div class="form-floating p-1">
+                    <select class="form-select m-1" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Avaliação</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label for="floatingSelect">Escolha</label>
+                </div>
+                
+                <div class="row pt-2 pb-2 m-2">
+                    <span>Faixa de preço</span>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="De">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Até">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary">Buscar</button>
+
             </div>
-            <div class="form-floating">
-              <select class="form-select m-1" id="floatingSelect" aria-label="Floating label select example">
-                <option selected>Avaliação</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <label for="floatingSelect">Escolha</label>
+            <div class="col-sm-7">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> <!-- Carousel-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
             </div>
-            <div class="row pt-2 pb-2">
-                <span>Quantidade</span>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="De">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Até">
-                </div>
-              </div>
-            <div class="row pt-2 pb-2">
-              <span>Faixa de preço</span>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="De">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Até">
-              </div>
-            </div>
-            <button type="button" class="btn btn-secondary">Buscar</button>
-    
-          </div>
-          <div class="col-sm-7">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> <!-- Carousel-->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imagens/placeholder.avif" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-    
-          </div>
         </div>
-      </div>
+    </div>
 
     <div class="container" id="tela"> <!-- Produtos-->
         <div class="d-flex flex-row">
